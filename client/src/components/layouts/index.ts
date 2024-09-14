@@ -1,0 +1,6 @@
+export { default as Aduthenticated } from './Authenticated.vue'
+export { default as FormsLayout } from './form/FormsLayout.vue'
+export { default as UVFormsLayout } from './form/UVFormsLayout.vue'
+export { default as Guest } from './Guest.vue'
+export { default as Preload } from './Preload.vue'
+export { default as Versatile } from './Versatile.vue'

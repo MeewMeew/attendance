@@ -1,0 +1,32 @@
+{
+  "name": "aserver",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "tsup",
+    "preview": "bun run --bun ./build/index.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.1",
+    "firebase-functions": "^5.0.1",
+    "luxon": "^3.4.4",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.0.7",
+    "rotating-file-stream": "^3.2.3",
+    "serve-favicon": "^2.5.0",
+    "tslog": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/luxon": "^3.4.2",
+    "@types/morgan": "^1.9.9",
+    "@types/nanoid": "^3.0.0",
+    "@types/serve-favicon": "^2.5.7",
+    "bun-types": "latest",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.2"
+  },
+  "module": "src/index.js"
+}

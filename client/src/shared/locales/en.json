@@ -1,0 +1,268 @@
+{
+  "views": {
+    "datatable": {
+      "student": {
+        "id": "Student ID",
+        "name": "Student Name",
+        "email": "Email",
+        "phone": "Phone",
+        "actions": "Actions",
+        "doc_id": "User ID"
+      },
+      "instructor": {
+        "doc_id": "User ID",
+        "id": "Instructor ID",
+        "name": "Instructor Name",
+        "email": "Email",
+        "phone": "Phone",
+        "actions": "Actions"
+      },
+      "faculty": {
+        "id": "Faculty ID",
+        "name": "Faculty Name",
+        "short_name": "Short Name"
+      },
+      "batch": {
+        "id": "Batch ID",
+        "name": "Batch Name",
+        "short_name": "Short Name",
+        "startYear": "Start Year",
+        "endYear": "End Year"
+      },
+      "class": {
+        "id": "Class ID",
+        "name": "Class Name",
+        "short_name": "Short Name",
+        "capacity": "Capacity"
+      },
+      "classrooms": {
+        "id": "Classroom ID",
+        "name": "Classroom Name",
+        "status": "Status",
+        "location": "Location",
+        "capacity": "Capacity"
+      },
+      "course": {
+        "id": "Course ID",
+        "name": "Course Name",
+        "code": "Course Code",
+        "credit": "Credit"
+      },
+      "schedule": {
+        "id": "Schedule ID",
+        "date": "Date",
+        "start_time": "Start Time",
+        "end_time": "End Time",
+        "time_range": "Time Range",
+        "class": "Class",
+        "classroom": "Classroom",
+        "course": "Course",
+        "instructor": "Instructor",
+        "faculty": "Faculty",
+        "batch": "Batch",
+        "method": "Method",
+        "theory": "Theory",
+        "practice": "Practice"
+      },
+      "actions": "Actions"
+    },
+    "versatile": {
+      "card": {
+        "student": {
+          "create": {
+            "title": "Create new student account",
+            "description": "Choose a method to create a new student account."
+          },
+          "update": {
+            "title": "Update student account",
+            "description": "Update student account information."
+          },
+          "view": {
+            "title": "Student Information",
+            "description": "View student account information."
+          }
+        },
+        "course": {
+          "create": {
+            "title": "Create new course",
+            "description": "Choose a method to create a new course."
+          },
+          "update": {
+            "title": "Update course",
+            "description": "Update course information."
+          },
+          "view": {
+            "title": "Course Information",
+            "description": "View course information."
+          }
+        },
+        "classroom": {
+          "create": {
+            "title": "Create new classroom",
+            "description": "Choose a method to create a new classroom."
+          },
+          "update": {
+            "title": "Update classroom",
+            "description": "Update classroom information."
+          },
+          "view": {
+            "title": "Classroom Information",
+            "description": "View classroom information."
+          },
+          "sync": {
+            "title": "Sync classroom data",
+            "description": "Sync classroom data from the server."
+          }
+        },
+        "schedule": {
+          "create": {
+            "title": "Create new schedule",
+            "description": "Choose a method to create a new schedule."
+          },
+          "update": {
+            "title": "Update schedule",
+            "description": "Update schedule information."
+          },
+          "view": {
+            "title": "Schedule Information",
+            "description": "View schedule information."
+          }
+        },
+        "batch": {
+          "create": {
+            "title": "Create new batch",
+            "description": "Choose a method to create a new batch."
+          },
+          "update": {
+            "title": "Update batch",
+            "description": "Update batch information."
+          },
+          "view": {
+            "title": "Batch Information",
+            "description": "View batch information."
+          }
+        },
+        "class": {
+          "create": {
+            "title": "Create new class",
+            "description": "Choose a method to create a new class."
+          },
+          "update": {
+            "title": "Update class",
+            "description": "Update class information"
+          },
+          "view": {
+            "title": "Class Information",
+            "description": "View class information."
+          }
+        },
+        "faculty": {
+          "create": {
+            "title": "Create new faculty",
+            "description": "Choose a method to create a new faculty."
+          },
+          "update": {
+            "title": "Update faculty",
+            "description": "Update faculty information."
+          },
+          "view": {
+            "title": "Faculty Information",
+            "description": "View faculty information."
+          }
+        },
+        "instructor": {
+          "create": {
+            "title": "Create new instructor account",
+            "description": "Choose a method to create a new instructor account."
+          },
+          "update": {
+            "title": "Update instructor account",
+            "description": "Update instructor account information."
+          },
+          "view": {
+            "title": "Instructor Information",
+            "description": "View instructor account information."
+          }
+        }
+      },
+      "create": {
+        "manual": "Create Manually",
+        "upload": "Create by Upload"
+      }
+    }
+  },
+  "components": {
+    "datatable": {
+      "faceted": {
+        "filter": {
+          "clear": "Clear Filter"
+        }
+      },
+      "row_actions": {
+        "update": "Update information",
+        "view": "View details",
+        "delete": "Delete",
+        "sync": "Sync data"
+      },
+      "options": {
+        "delete_all_selected": "Delete All Selected"
+      }
+    },
+    "upload": {
+      "title": "Create by Upload",
+      "description": "Upload a xlsx file to create multiple data. The file should contain the following columns:",
+      "button": "Upload File",
+      "validate": {
+        "button": "Validating..."
+      },
+      "text": {
+        "selected": "{a} file selected",
+        "accepted": "Accepts {a} file only"
+      }
+    },
+    "button": {
+      "create": "Create",
+      "update": "Update",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "accept": "Accept",
+      "close": "Close",
+      "upload": "Upload",
+      "save": "Save changes",
+      "never_mind": "Never mind",
+      "select_popover": "Choose one"
+    },
+    "alert": {
+      "delete": {
+        "title": "Are you absolutely sure?",
+        "description": "You won't be able to revert this!"
+      }
+    }
+  },
+  "utils": {
+    "form": {
+      "create": {
+        "success": "Successfully created new {a}.",
+        "error": "Failed to create {a}.",
+        "exist": "The {a} already exists."
+      },
+      "update": {
+        "success": "Successfully updated {a}.",
+        "error": "Failed to update {a}.",
+        "no_change": "No changes made.",
+        "not_found": "The {a} does not exist."
+      },
+      "delete": {
+        "success": "Successfully deleted {a}.",
+        "error": "Failed to delete {ms$g}.",
+        "not_found": "The {a} does not exist."
+      }
+    },
+    "fetch": {
+      "error": "Failed to fetch {a}."
+    }
+  },
+  "misc": {
+    "missing": "Missing {a}"
+  }
+}

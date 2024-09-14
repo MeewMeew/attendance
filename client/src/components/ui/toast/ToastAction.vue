@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import { ToastAction, type ToastActionProps } from 'radix-vue'
+import { computed, type HTMLAttributes } from 'vue'
+
+import { cn } from '@/lib/utils'
+
+const props = defineProps<ToastActionProps & { class?: HTMLAttributes['class'] }>()
+
+const delegatedProps = computed(() => {
+  const { class: _, ...delegated } = props
+
+  return delegated
+})
+</script>
+
+<template>
+  <ToastAction
+    v-bind="delegatedProps"
+    :class="
+      cn(
+        'inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-transparent px-3 text-sm font-medium transition-colors group-[.destructive]:border-muted/40 hover:bg-secondary group-[.destructive]:hover:border-destructive/30 group-[.destructive]:hover:bg-destructive group-[.destructive]:hover:text-destructive-foreground focus:outline-none focus:ring-1 focus:ring-ring group-[.destructive]:focus:ring-destructive disabled:pointer-events-none disabled:opacity-50',
+        props.class
+      )
+    "
+  >
+    <slot />
+  </ToastAction>
+</template>

@@ -1,0 +1,268 @@
+{
+  "views": {
+    "datatable": {
+      "student": {
+        "id": "Mã sinh viên",
+        "name": "Tên sinh viên",
+        "email": "Email",
+        "phone": "Số điện thoại",
+        "actions": "Hành động",
+        "doc_id": "Mã người dùng"
+      },
+      "instructor": {
+        "doc_id": "Mã người dùng",
+        "id": "Mã giảng viên",
+        "name": "Tên giảng viên",
+        "email": "Email",
+        "phone": "Số điện thoại",
+        "actions": "Hành động"
+      },
+      "faculty": {
+        "id": "Mã khoa",
+        "name": "Tên khoa",
+        "short_name": "Tên viết tắt"
+      },
+      "batch": {
+        "id": "Mã khóa",
+        "name": "Tên khóa",
+        "short_name": "Tên viết tắt",
+        "startYear": "Năm bắt đầu",
+        "endYear": "Năm kết thúc"
+      },
+      "class": {
+        "id": "Mã lớp",
+        "name": "Tên lớp",
+        "short_name": "Tên viết tắt",
+        "capacity": "Sức chứa"
+      },
+      "classrooms": {
+        "id": "Mã phòng học",
+        "name": "Tên phòng học",
+        "status": "Trạng thái",
+        "location": "Vị trí",
+        "capacity": "Sức chứa"
+      },
+      "course": {
+        "id": "Mã khóa học",
+        "name": "Tên khóa học",
+        "code": "Mã khóa học",
+        "credit": "Tín chỉ"
+      },
+      "schedule": {
+        "id": "Mã lịch học",
+        "date": "Ngày",
+        "start_time": "Giờ bắt đầu",
+        "end_time": "Giờ kết thúc",
+        "time_range": "Khoảng thời gian",
+        "class": "Lớp",
+        "classroom": "Phòng học",
+        "course": "Khóa học",
+        "instructor": "Giảng viên",
+        "faculty": "Khoa",
+        "batch": "Khóa",
+        "method": "Phương pháp",
+        "theory": "Lý thuyết",
+        "practice": "Thực hành"
+      },
+      "actions": "Hành động"
+    },
+    "versatile": {
+      "card": {
+        "student": {
+          "create": {
+            "title": "Tạo tài khoản sinh viên mới",
+            "description": "Chọn phương pháp để tạo tài khoản sinh viên mới."
+          },
+          "update": {
+            "title": "Cập nhật tài khoản sinh viên",
+            "description": "Cập nhật thông tin tài khoản sinh viên."
+          },
+          "view": {
+            "title": "Thông tin sinh viên",
+            "description": "Xem thông tin tài khoản sinh viên."
+          }
+        },
+        "course": {
+          "create": {
+            "title": "Tạo khóa học mới",
+            "description": "Chọn phương pháp để tạo khóa học mới."
+          },
+          "update": {
+            "title": "Cập nhật khóa học",
+            "description": "Cập nhật thông tin khóa học."
+          },
+          "view": {
+            "title": "Thông tin khóa học",
+            "description": "Xem thông tin khóa học."
+          }
+        },
+        "classroom": {
+          "create": {
+            "title": "Tạo phòng học mới",
+            "description": "Chọn phương pháp để tạo phòng học mới."
+          },
+          "update": {
+            "title": "Cập nhật phòng học",
+            "description": "Cập nhật thông tin phòng học."
+          },
+          "view": {
+            "title": "Thông tin phòng học",
+            "description": "Xem thông tin phòng học."
+          },
+          "sync": {
+            "title": "Đồng bộ dữ liệu phòng học",
+            "description": "Đồng bộ dữ liệu phòng học từ máy chủ."
+          }
+        },
+        "schedule": {
+          "create": {
+            "title": "Tạo lịch học mới",
+            "description": "Chọn phương pháp để tạo lịch học mới."
+          },
+          "update": {
+            "title": "Cập nhật lịch học",
+            "description": "Cập nhật thông tin lịch học."
+          },
+          "view": {
+            "title": "Thông tin lịch học",
+            "description": "Xem thông tin lịch học."
+          }
+        },
+        "batch": {
+          "create": {
+            "title": "Tạo khóa mới",
+            "description": "Chọn phương pháp để tạo khóa mới."
+          },
+          "update": {
+            "title": "Cập nhật khóa",
+            "description": "Cập nhật thông tin khóa."
+          },
+          "view": {
+            "title": "Thông tin khóa",
+            "description": "Xem thông tin khóa."
+          }
+        },
+        "class": {
+          "create": {
+            "title": "Tạo lớp mới",
+            "description": "Chọn phương pháp để tạo lớp mới."
+          },
+          "update": {
+            "title": "Cập nhật lớp",
+            "description": "Cập nhật thông tin lớp."
+          },
+          "view": {
+            "title": "Thông tin lớp",
+            "description": "Xem thông tin lớp."
+          }
+        },
+        "faculty": {
+          "create": {
+            "title": "Tạo khoa mới",
+            "description": "Chọn phương pháp để tạo khoa mới."
+          },
+          "update": {
+            "title": "Cập nhật khoa",
+            "description": "Cập nhật thông tin khoa."
+          },
+          "view": {
+            "title": "Thông tin khoa",
+            "description": "Xem thông tin khoa."
+          }
+        },
+        "instructor": {
+          "create": {
+            "title": "Tạo tài khoản giảng viên mới",
+            "description": "Chọn phương pháp để tạo tài khoản giảng viên mới."
+          },
+          "update": {
+            "title": "Cập nhật tài khoản giảng viên",
+            "description": "Cập nhật thông tin tài khoản giảng viên."
+          },
+          "view": {
+            "title": "Thông tin giảng viên",
+            "description": "Xem thông tin tài khoản giảng viên."
+          }
+        }
+      },
+      "create": {
+        "manual": "Tạo thủ công",
+        "upload": "Tạo bằng tải lên"
+      }
+    }
+  },
+  "components": {
+    "datatable": {
+      "faceted": {
+        "filter": {
+          "clear": "Xóa bộ lọc"
+        }
+      },
+      "row_actions": {
+        "update": "Cập nhật thông tin",
+        "view": "Xem chi tiết",
+        "delete": "Xóa",
+        "sync": "Đồng bộ dữ liệu"
+      },
+      "options": {
+        "delete_all_selected": "Xóa tất cả đã chọn"
+      }
+    },
+    "upload": {
+      "title": "Tạo bằng tải lên",
+      "description": "Tải lên tệp xlsx để tạo nhiều dữ liệu. Tệp phải chứa các cột sau:",
+      "button": "Tải tệp lên",
+      "validate": {
+        "button": "Đang xác thực..."
+      },
+      "text": {
+        "selected": "{a} tệp đã chọn",
+        "accepted": "Chỉ chấp nhận {a} tệp"
+      }
+    },
+    "button": {
+      "create": "Tạo",
+      "update": "Cập nhật",
+      "delete": "Xóa",
+      "cancel": "Hủy",
+      "accept": "Chấp nhận",
+      "close": "Đóng",
+      "upload": "Tải lên",
+      "save": "Lưu thay đổi",
+      "never_mind": "Không sao",
+      "select_popover": "Chọn một"
+    },
+    "alert": {
+      "delete": {
+        "title": "Bạn có chắc chắn không?",
+        "description": "Bạn sẽ không thể hoàn tác hành động này!"
+      }
+    }
+  },
+  "utils": {
+    "form": {
+      "create": {
+        "success": "Đã tạo mới {a} thành công.",
+        "error": "Tạo {a} thất bại.",
+        "exist": "{a} đã tồn tại."
+      },
+      "update": {
+        "success": "Đã cập nhật {a} thành công.",
+        "error": "Cập nhật {a} thất bại.",
+        "no_change": "Không có thay đổi.",
+        "not_found": "{a} không tồn tại."
+      },
+      "delete": {
+        "success": "Đã xóa {a} thành công.",
+        "error": "Xóa {ms$g} thất bại.",
+        "not_found": "{a} không tồn tại."
+      }
+    },
+    "fetch": {
+      "error": "Lấy {a} thất bại."
+    }
+  },
+  "misc": {
+    "missing": "Thiếu {a}"
+  }
+}

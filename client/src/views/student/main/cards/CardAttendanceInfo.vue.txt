@@ -1,0 +1,67 @@
+<script setup lang="ts">
+import { onSnapshot } from 'firebase/firestore'
+import { computed, onMounted, ref } from 'vue'
+
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Client } from '@/database/index'
+import type { IClient, IUser } from '@/shared/types'
+const props = defineProps<{ user: IUser }>()
+
+const clients = ref<IClient[]>([])
+
+const ontime = computed(() => props.user.attendanceInfo.ontime)
+const absent = computed(() => props.user.attendanceInfo.absent)
+
+const nextClassroom = computed(() =>
+  clients.value.length === 1
+    ? clients.value[0].name
+    : clients.value.length > 1
+      ? 'Multiple classrooms next'
+      : 'No classroom next'
+)
+const label = computed(() =>
+  clients.value.length === 1
+    ? 'Next classrooms:'
+    : clients.value.length > 1
+      ? 'Next classrooms:'
+      : 'Next classroom:'
+)
+
+onMounted(() => {
+  onSnapshot(
+    Client.createRefByClassesName([props.user.studentInfo.className], ['pending', 'in-progress']),
+    (snapshot) => {
+      clients.value = snapshot.docs.map((doc) => doc.data() as IClient)
+    }
+  )
+})
+</script>
+
+<template>
+  <Card class="min-w-72">
+    <CardHeader>
+      <CardTitle class="text-muted-foreground">Attendance Info</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div class="flex flex-col space-y-2">
+        <div class="grid grid-cols-3 items-center">
+          <Label v-text="label" />
+          <Input class="col-span-2 font-mono" v-model="nextClassroom" readonly />
+        </div>
+        <div class="grid grid-cols-3 items-center">
+          <Label>On time: </Label>
+          <Input class="col-span-2 font-mono" v-model="ontime" readonly />
+        </div>
+        <div class="grid grid-cols-3 items-center">
+          <Label>Absent: </Label>
+          <Input class="col-span-2 font-mono" v-model="absent" readonly />
+        </div>
+        <div class="flex flex-col justify-between space-y-2"></div>
+      </div>
+    </CardContent>
+  </Card>
+</template>
+
+<style scoped lang="css"></style>
